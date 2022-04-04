@@ -6,5 +6,7 @@ public class TestaMetodo {
         System.err.println(joao.saldo);
         joao.deposita(50);
         System.out.println(joao.saldo);
+        joao.saca(60);
+        System.out.println(joao.saldo);
     }
-}
+} 
