@@ -3,7 +3,7 @@ public class Conta {
     double saldo;
     int agencia;
     int numero;
-    String titular;
+    Cliente titular;
 
     // sem retorno
     public void deposita(double valor) {
@@ -26,8 +26,7 @@ public class Conta {
             this.saldo = this.saldo - valor;
             destino.saldo = destino.saldo + valor;
             return true;
-        } else {
-            return false;
         }
+        return true;
     }
 }
