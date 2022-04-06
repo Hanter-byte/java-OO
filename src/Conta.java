@@ -25,6 +25,14 @@ public class Conta {
         this.numero = numero;
     }
 
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
+    }
+
+    public Cliente getTitular() {
+        return titular;
+    }
+
     // sem retorno
     public void deposita(double valor) {
         this.saldo = this.saldo + valor;
